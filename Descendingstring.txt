@@ -1,0 +1,22 @@
+import java.util.*;
+class Descending
+{
+   public static void main(String args[])
+   {
+     Scanner sc=new Scanner(System.in);
+     System.out.println("EnterString  ");
+     String str=sc.next();
+     char ch[]=str.toCharArray();
+     Arrays.sort(ch);
+     String s=" ";
+      for(int i=ch.length-1;i>=0;i--)
+      {
+        s+=ch[i];
+      }
+      System.out.println("Descending order of given String "+s);
+    }
+} 
+
+Output______________________________________________________________________
+EnterString  abcdefgh
+Descending order of given String  hgfedcba
